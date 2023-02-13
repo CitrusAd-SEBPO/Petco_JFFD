@@ -253,7 +253,12 @@
     .splide.is-rendered {
       visibility: visible
     }
-
+    #citrus-carousel{
+      max-height: 360px;
+    }
+    #citrus-carousel .splide__slide{
+      max-height: 360px;
+    }
     .splide__slide {
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
@@ -450,7 +455,6 @@
       display: inline-block;
       height: 8px;
       margin: 3px;
-      opacity: .7;
       padding: 0;
       position: relative;
       -webkit-transition: -webkit-transform .2s linear;
@@ -643,6 +647,9 @@
     }
 
     .citrus-orijin-all-overflow {
+      width: 100%;
+      max-width: 1440px;
+      margin: 0px auto;
       overflow: hidden !important;
       background-color: #fff;
       font-family: PetcoCircularTT-Regular, arial
@@ -1116,7 +1123,7 @@
     .citrus-nourish-area {
       padding: 0 20px;
       background-color: #bce5f6;
-      margin-top: 100px;
+      margin-top: 50px;
       color: #fff
     }
 
@@ -1660,7 +1667,7 @@
     }
 
     #citrus-carousel .citrus-banner-slider-copy .citrus-banner-title-logo {
-      font-size: 50px;
+      font-size: 35px;
       font-family: PetcoCircularTT-Bold, arial !important;
       font-weight: 200;
       margin: 20px 0 30px 0;
@@ -1702,24 +1709,24 @@
       left: 50%;
       -webkit-transform: translate(-50%, 0);
       transform: translate(-50%, 0);
-      padding: 0 1em;
+      padding: 0.5em 0.5em;
       position: absolute;
-      background-color: #fff;
+      background-color: rgba(255, 255, 255, .8);
       z-index: 1;
       width: 100px;
-      height: 30px;
+      height: 40px;
       border-radius: 5px 5px 0 0;
       border-bottom: 0
     }
 
     .splide__pagination__page {
-      border: 1px solid #00205b;
-      height: 12px;
-      width: 12px
+      border: 2px solid #09205c;
+      height: 19px;
+      width: 19px;
     }
 
     .splide__pagination__page.is-active {
-      background-color: #00205b;
+      background-color: #09205c;
       -webkit-transform: scale(1);
       transform: scale(1)
     }
@@ -1758,9 +1765,7 @@
 
     .benefits-area {
       overflow: hidden;
-      padding-top: 65px;
-      padding-bottom: 40px;
-      background: #fff
+      background: #fff;
     }
 
     .common-heading {
@@ -1792,14 +1797,13 @@
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      margin-top: 25px;
       overflow-x: auto;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap
     }
 
     .benefits-single-item img {
-      max-width: 150px;
+      max-width: 320px;
       width: 100%;
       height: auto
     }
@@ -1815,7 +1819,6 @@
       -webkit-box-flex: 0;
       -ms-flex: 0 0 30%;
       flex: 0 0 30%;
-      margin-bottom: 50px;
       padding: 50px 20px
     }
 
@@ -1854,8 +1857,9 @@
       background: unset !important
     }
 
-    .citrus-comments-area {
-      margin-bottom: 200px
+    .citrus-comments-area{
+      margin-top: -40px;
+      margin-bottom: 20px;
     }
 
     .citrus-comments-area .citrus-comments-container {
@@ -2274,6 +2278,12 @@
     }
 
     @media all and (max-width:768px) {
+      #citrus-carousel{
+      max-height: none;
+    }
+    #citrus-carousel .splide__slide{
+      max-height: none;
+    }    
       .citrus-comments-area {
         background-color: #bce5f6
       }
