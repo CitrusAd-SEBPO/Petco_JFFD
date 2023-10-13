@@ -1605,6 +1605,17 @@
             font-family: PetcoCircularTT-Bold, arial !important;
             font-weight: 600;
         }
+        
+        /*------ Scrollbar Issue Fix ------*/
+            .citrus-chart::-webkit-scrollbar, .benefits-icon-flex::-webkit-scrollbar, .citrus-product-list::-webkit-scrollbar
+            {
+                display: none;     
+            }
+            .citrus-product-list, .citrus-chart, .benefits-icon-flex {
+            -ms-overflow-style: none; 
+            scrollbar-width: none; 
+            }
+        /*------ Scrollbar Issue Fix ------*/
     
         /*------ Responsive Styles ------*/
         @media all and (min-width:1920px) and (max-width:4800px) {
